@@ -38,7 +38,7 @@ def wechat():
     # cat str
     tmp_str = "".join(li)
     # Encrypt with SHA1, get correct signature value
-    sign = hashlib.sha1(tmp_str).hexdigest()
+    sign = hashlib.sha1(tmp_str.encode("utf8")).hexdigest()
 
     # 将自己计算的签名值与请求的签名参数进行对比，若相同，则证明请求来自微信
     if signature != sign:
