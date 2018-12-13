@@ -11,7 +11,7 @@ from flask import Flask, request, abort
 
 # 常量放这里
 # wechat token
-WECHAT_TOKEN = "aictftmp"  # config by yourself
+WECHAT_TOKEN = "debugtest"  # config by yourself
 
 app = Flask(__name__)
 
